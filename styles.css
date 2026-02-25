@@ -1,0 +1,16 @@
+h1 {
+    font-family: "Noto Sans JP", cursive;
+}
+
+p, label, input, select, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body{
+    background-color:#ffe8f6;
+}
+
+nav {
+    background-color: #ffb6c1;
+}
