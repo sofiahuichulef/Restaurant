@@ -1,3 +1,5 @@
+*{  font-family: "Cherry Bomb One", cursive;}
+
 h1 {
     font-family: "Cherry Bomb One", cursive;
     text-align: center;
@@ -8,6 +10,7 @@ p, label, input, select, button {
     text-align: center;
 }
 
+/* Estilos para el formulario */
 button {
     font-family: "Cherry Bomb One", cursive;
     text-align: center;
@@ -17,12 +20,55 @@ button {
 nav {
     font-family: "Cherry Bomb One", cursive;
     text-align: center;
-}
-
-body{
-    background-color:#ffe8f6;
+        background-color:#ffe8f6;
 }
 
 nav {
-    background-color: #ffb6c1;
+    background-color: #ece4e5;
+}
+
+body{
+    background-color:#ffe8f6;}
+
+
+/* HERO */
+.hero{
+    height: 90vh;
+    background-image: url("imagenes/Dia-del-Ramen-jpg.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero div{
+    position:relative;
+    z-index:2;
+}
+
+/* formulario centrado */
+#title-form{
+    max-width:600px;
+    margin:auto;
+    border-radius:15px;
+}
+
+.contenedor-cards{
+    display: flex;          /* pone cards lado a lado */
+    justify-content: center;
+    gap: 30px;              /* espacio entre cards */
+    flex-wrap: wrap;        /* responsive */
+    padding: 40px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
