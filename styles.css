@@ -27,10 +27,9 @@ nav {
     background-color: #fdfdfd;
 }
 
-body{
-    background-color:#ffe8f6;}
-
-
+body {
+    background-color: #FFF4E6;
+}
 /* HERO */
 .hero{
     height: 90vh;
@@ -72,3 +71,10 @@ body{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
+
+.contador-carrito{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+

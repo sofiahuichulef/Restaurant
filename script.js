@@ -1,6 +1,31 @@
 // script.js
 // Manipulación básica del DOM - Reservas Restaurante
 
+console.log(carrito);
+let cantidad = 1;
+
+function cambiarCantidad(valor){
+
+    cantidad += valor;
+
+    // evitar números negativos
+    if(cantidad < 1){
+        cantidad = 1;
+    }
+
+    document.getElementById("cantidad").innerText = cantidad;
+}
+
+
+function agregarCarrito(producto, precio){
+
+    alert(
+        "Agregaste " + cantidad +
+        " x " + producto +
+        " al carrito 🛒"
+    );
+
+}
 function validarEmail(correo){
     let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(correo);

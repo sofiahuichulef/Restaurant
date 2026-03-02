@@ -17,8 +17,12 @@
 
 <body>
 
+      
+
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-    <a class="navbar-brand" href="#">🍜 uwu Ramen</a>
+    <a class="navbar-brand" href="#">🍜 uwu Ramen
+        <span id="cart-count" class="badge bg-dark ms-2">0  🛒</span>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -82,6 +86,19 @@
             <div class="card-body">
                 <h5>Spicy Ramen</h5>
                 <p class="fw-bold">$9.990</p>
+                    <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Ramen Picante',9990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -94,7 +111,20 @@
             <img src="menu/28609-ramenmiso-1280w.jpg" class="card-img-top">
             <div class="card-body">
                 <h5>Ramen de Cerdo</h5>
-                <p class="fw-bold">$9.990</p>   
+                <p class="fw-bold">$9.990</p>
+                    <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Ramen de Cerdo',9990)">
+                        Agregar al Carrito
+                    </button>
+                </div>     
             </div>
         </div>
     </div>
@@ -106,7 +136,69 @@
             <img src="menu/28610-ramencamaron-1280w.jpg" class="card-img-top">
             <div class="card-body">
                 <h5>Ramen de Camaron</h5>
-                <p class="fw-bold">$11.990</p>   
+                <p class="fw-bold">$11.990</p>
+                    <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Ramen de Camaron',11990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+            <h2>Ramen miso vegano</h2> 
+       <p>caldo de verduras, fideos frescos, verduras frescas y tofu.</p>
+            <img src="menu/28618-ramenmisovegano-main-1280w.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5>Ramen Miso Vegano</h5>
+                <p class="fw-bold">$11.990</p>
+                <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Ramen Miso Vegano',11990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <h2>Ramen pork</h2> 
+       <p>caldo de cerdo, fideos frescos, rodajas de cerdo, huevo marinado y verduras frescas.</p>
+            <img src="menu/32164-ramenroastpork-1280w.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5>Ramen Pork</h5>
+                <p class="fw-bold">$11.990</p> 
+                <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Ramen Pork',11990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -116,7 +208,7 @@
   <!-- fin ramen section -->
 </section>
 
-<section id="acompanantes" class="container  p-4 mt-5">
+<section id="acompanantes" class="container card p-4 mt-5">
     <h2>ACOMPAÑANTES</h2>
     
 
@@ -129,9 +221,22 @@
             <h2>Gyosas de cerdo</h2>
             <p>Deliciosas gyosas rellenas de carne de cerdo, acompañadas de una salsa especial.</p> 
             <img src="menu/28562-gyozascerdox5-1280w.jpg" class="card-img-top">
-            <div class="card-body">
-                <h5>Gyozas de Cerdo</h5>
-                <p class="fw-bold">$3.990</p>
+                <div class="card-body">
+                    <h5>Gyozas de Cerdo</h5>
+                    <p class="fw-bold">$3.990</p>
+                        <div class="contador-carrito">
+                        <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                            −
+                        </button>
+                        <span id="cantidad">1</span>
+                        <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                            +
+                        </button>
+                        <button class="btn-agregar"
+                            onclick="agregarCarrito('Gyosas de Cerdo',3990)">
+                            Agregar al Carrito
+                        </button>
+                    </div>
             </div>
         </div>
     </div>
@@ -140,12 +245,25 @@
 
     <div class="col-md-4">
         <div class="card h-100">
-            <h2>Gyosas de cerdo</h2>
-            <p>Deliciosas gyosas rellenas de carne de cerdo, acompañadas de una salsa especial.</p> 
-            <img src="menu/28562-gyozascerdox5-1280w.jpg" class="card-img-top">
+            <h2>Alitas</h2>
+            <p>Deliciosas alitas de pollo, acompañadas de una salsa especial.</p> 
+            <img src="menu/28571-alitasone-main-1280w.jpg" class="card-img-top">
             <div class="card-body">
-                <h5>Gyozas de Cerdo</h5>
+                <h5>Alitas</h5>
                 <p class="fw-bold">$3.990</p>
+                    <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Alitas',3990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
             </div>
         </div>
     </div> 
@@ -158,6 +276,19 @@
             <div class="card-body">
                 <h5>Gyozas de Verduras</h5>
                 <p class="fw-bold">$3.990</p>
+                    <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Gyosas de Verduras',3990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -171,9 +302,75 @@
             <div class="card-body">
                 <h5>Sopa Miso</h5>
                 <p class="fw-bold">$4.990</p>
+                        <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Sopa Miso',4990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
             </div>
         </div>
     </div>
+
+     <div class="col-md-4">
+        <div class="card h-100">
+            <h2>Bolitas de Carne</h2>
+            <p>Deliciosas bolitas de carne, acompañadas de una salsa especial.</p> 
+            <img src="menu/28570-bolitasdecarnex5-1280w.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5>Bolitas de Carne</h5>
+                <p class="fw-bold">$4.990</p>
+                        <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Bolitas de Carne',4990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <h2>Baocharsiu</h2>
+            <p>pan al vapor con Char Siu (cerdo bbq) con un toque de salsa especial.</p> 
+            <img src="menu/28572-baocharsiu-main-1280w.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5>Baocharsiu</h5>
+                <p class="fw-bold">$4.990</p>
+                        <div class="contador-carrito">
+                    <button class="btn-cantidad" onclick="cambiarCantidad(-1)">
+                        −
+                    </button>
+                    <span id="cantidad">1</span>
+                    <button class="btn-cantidad" onclick="cambiarCantidad(1)">
+                        +
+                    </button>
+                    <button class="btn-agregar"
+                        onclick="agregarCarrito('Baocharsiu',4990)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- fin acompañantes section -->
+</div>
+
+</section>
    
 
 <section id="bebidas" class="container mt-5">
